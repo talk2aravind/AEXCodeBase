@@ -204,6 +204,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />
+    <Content Include="images\backgrounds\wild_oliva.png" />
+    <Content Include="images\backgrounds\wild_oliva_%402X.png" />
+    <Content Include="images\backgrounds\wild_oliva_blue_dark.png" />
+    <Content Include="images\backgrounds\wild_oliva_blue_light.png" />
+    <Content Include="images\backgrounds\wild_oliva_dark.png" />
+    <Content Include="images\backgrounds\wild_oliva_light.png" />
+    <Content Include="images\backgrounds\wild_oliva_light_head.png" />
     <Content Include="images\IMG_9113.JPG" />
     <Content Include="images\IMG_9114.JPG" />
     <Content Include="images\IMG_9115.jpg" />
