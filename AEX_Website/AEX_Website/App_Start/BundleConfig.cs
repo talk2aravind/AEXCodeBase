@@ -54,7 +54,7 @@ namespace AEXApplication
                                         "~/css/style.css",
                                         "~/Content/site.css",
                                         "~/js/woothemes-FlexSlider-06b12f8/flexslider.css",
-                                        //"~/js/woothemes-FlexSlider-06b12f8/jquery.flexslider-min.css"
+                                        //"~/js/woothemes-FlexSlider-06b12f8/jquery.flexslider-min.css",
                                         //"~/js/woothemes-FlexSlider-06b12f8/bootstrap.min.css",
                                         "~/js/prettyPhoto_3.1.5/prettyPhoto.css"
           ));
