@@ -9,7 +9,7 @@
 <div class="container marketing">
     <div id="main_flexslider" class="flexslider">
         <ul class="slides">
-            <li class="item" style="background-image: url(../../images/1.jpg)">
+            <li class="item" style="background-image: url(../../images/donate.jpg)">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>
@@ -18,7 +18,7 @@
                         </h1>
                         <p class="lead skincolored"><strong>Adventure Explorers Inc</strong> is a <strong>Non Profit </strong> corporation organized and operated <strong>
                         exclusively </strong> for charitable purposes.</p>
-                        <span class="round_badge"><strong><i class="fa fa-twitter"></i></strong><strong>V3</strong></span>
+                        @*<span class="round_badge"><strong><i class="fa fa-twitter"></i></strong><strong>V3</strong></span>*@
                     </div>
                 </div>
             </li>
@@ -56,14 +56,21 @@
         <section class="call_to_action">
             <h3>Learn. Conserve. Experience.</h3>
             <h4>Explore the pacific northwest </h4>
-            <a class="btn btn-primary btn-lg" href="#">Donate</a>
+            @*<a class="btn btn-primary btn-lg" href="#">Donate</a>*@
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="AMX7MD2PE92BY">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
         </section>
         <section class="features_teasers_wrapper">
             <div class="row">
                 <div class="feature_teaser col-sm-4 col-md-4">
                     <img alt="responsive" src="~/images/1.jpg">
-                    <h3>Clean, Responsive Design</h3>
-                    <p>A multipurpose but mainly<strong> business oriented</strong> design, built to serve as a foundation for your web projects. Suspendisse nec risus fermentum sapien congue fermentum sed at lorem.</p>
+                    <h3>Basic Alphine, Rock & Glacier Climbing</h3>
+                    <p>Our basic climbing class offers <strong> excellent learning </strong> ground for beginners who wants to break out of their hiking shell and get into more technical climbing and basic level climbing.</p>
                 </div>
                 <div class="feature_teaser col-sm-4 col-md-4">
                     <img alt="responsive" src="images/git.png">

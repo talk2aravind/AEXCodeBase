@@ -211,6 +211,7 @@
     <Content Include="images\backgrounds\wild_oliva_dark.png" />
     <Content Include="images\backgrounds\wild_oliva_light.png" />
     <Content Include="images\backgrounds\wild_oliva_light_head.png" />
+    <Content Include="images\donate.jpg" />
     <Content Include="images\IMG_9113.JPG" />
     <Content Include="images\IMG_9114.JPG" />
     <Content Include="images\IMG_9115.jpg" />
