@@ -211,7 +211,11 @@
     <Content Include="images\backgrounds\wild_oliva_dark.png" />
     <Content Include="images\backgrounds\wild_oliva_light.png" />
     <Content Include="images\backgrounds\wild_oliva_light_head.png" />
+    <Content Include="images\BCC1.jpg" />
+    <Content Include="images\bcc2.jpg" />
+    <Content Include="images\BRC_photo.jpg" />
     <Content Include="images\donate.jpg" />
+    <Content Include="images\ICC1.jpg" />
     <Content Include="images\IMG_9113.JPG" />
     <Content Include="images\IMG_9114.JPG" />
     <Content Include="images\IMG_9115.jpg" />
@@ -219,6 +223,7 @@
     <Content Include="images\IMG_9117.JPG" />
     <Content Include="images\IMG_9118.JPG" />
     <Content Include="images\IMG_9121.JPG" />
+    <Content Include="images\MtBaker.jpg" />
     <Content Include="images\restart_logo.png" />
     <Content Include="images\small_logo.jpg" />
     <Content Include="images\St.Helens.JPG" />
