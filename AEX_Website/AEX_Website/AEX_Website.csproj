@@ -344,6 +344,8 @@
     <Content Include="Views\Fundraisings\Details.cshtml" />
     <Content Include="Views\Fundraisings\Edit.cshtml" />
     <Content Include="Views\Fundraisings\Index.cshtml" />
+    <Content Include="Views\RockClass.cshtml" />
+    <Content Include="Views\Home\RockClass.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="js\prettyPhoto_3.1.5\images\prettyPhoto\dark_square\" />

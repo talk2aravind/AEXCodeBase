@@ -40,5 +40,11 @@ namespace AEXApplication.Controllers
 
             return View();
         }
+        public ActionResult RockClass()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
     }
 }
