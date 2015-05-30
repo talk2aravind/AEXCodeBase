@@ -222,6 +222,7 @@
     <Content Include="images\restart_logo.png" />
     <Content Include="images\small_logo.jpg" />
     <Content Include="images\St.Helens.JPG" />
+    <Content Include="images\Team.jpg" />
     <Content Include="images\TM.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
