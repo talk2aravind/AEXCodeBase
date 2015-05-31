@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
     //Flickr feed snippet by css-tricks.com			   
     jQuery.getJSON("https://api.meetup.com/2/photos?offset=0&format=json&group_urlname=adventure-explorers-washington&photo-host=public&page=10&fields=&order=time&desc=True&sig_id=152258322&sig=513a85064b9640f4a7372c225eca4bae2f561572", function (data) {
         var target = "#latest-flickr-images ul"; // Where is it going?
-        for (i = 0; i <= 9; i = i + 1) { // Loop through the 10 most recent, [0-9]
+        for (i = 0; i <= 4; i = i + 1) { // Loop through the 10 most recent, [0-9]
             var pic = data.results[i];
 
             var liNumber = i + 1; // Add class to each LI (1-12)
