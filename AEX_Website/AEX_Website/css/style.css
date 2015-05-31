@@ -13,6 +13,7 @@ that we copied and altered in order to override the original variables and make 
 This way we leave Bootstrap unharmed.
 --------------------------------------------------------------*/
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
