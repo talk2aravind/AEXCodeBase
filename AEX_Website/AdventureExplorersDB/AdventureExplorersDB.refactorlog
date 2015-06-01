@@ -21,4 +21,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Member_LastName" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="63a89665-0069-4294-85f1-b1b071c1819d" ChangeDateTime="06/01/2015 05:37:06">
+    <Property Name="ElementName" Value="[dbo].[SubDivision].[MasterId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SubDivision]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DivisionId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4bd06a7-ef02-4f75-abd2-a8b67339f2f8" ChangeDateTime="06/01/2015 05:47:48">
+    <Property Name="ElementName" Value="[dbo].[Fundraising].[SubcategoryId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Fundraising]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SubDivisionId" />
+  </Operation>
 </Operations>

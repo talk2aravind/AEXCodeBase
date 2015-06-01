@@ -64,14 +64,17 @@
     <Build Include="Tables\GearList.sql" />
     <Build Include="Tables\Members.sql" />
     <Build Include="Tables\AEXMaster.sql" />
+    <Build Include="Tables\SubDivision.sql" />
+    <Build Include="Tables\Fundraising.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AdventureExplorersDB.publish.xml" />
+    <None Include="PROD_AdventureExplorersDB.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="AdventureExplorersDB.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+    <PostDeploy Include="Scripts\Script.AexMaster_Populate.sql" />
+    <None Include="Scripts\Script.SubDivision_Populate.sql" />
   </ItemGroup>
 </Project>
