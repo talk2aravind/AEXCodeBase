@@ -47,6 +47,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -164,6 +166,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FundraisingsController.cs" />
+    <Compile Include="Controllers\GearListsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -176,6 +179,24 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Fundraising.cs" />
+    <Compile Include="Models\GearCheckOut.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GearCheckOut.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GearCheckOut.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GearCheckOut.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GearCheckOut.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GearCheckOut.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GearList.cs">
+      <DependentUpon>GearCheckOut.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -292,6 +313,23 @@
     <Content Include="fonts\font-awesome\scss\_spinning.scss" />
     <Content Include="fonts\font-awesome\scss\_stacked.scss" />
     <Content Include="fonts\font-awesome\scss\_variables.scss" />
+    <EntityDeploy Include="Models\GearCheckOut.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GearCheckOut.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\GearCheckOut.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GearCheckOut.edmx</DependentUpon>
+      <LastGenOutput>GearCheckOut.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\GearCheckOut.edmx.diagram">
+      <DependentUpon>GearCheckOut.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\GearCheckOut.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GearCheckOut.edmx</DependentUpon>
+      <LastGenOutput>GearCheckOut.cs</LastGenOutput>
+    </Content>
     <None Include="Properties\PublishProfiles\adventure-explorers.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -350,8 +388,11 @@
     <Content Include="Views\Fundraisings\Details.cshtml" />
     <Content Include="Views\Fundraisings\Edit.cshtml" />
     <Content Include="Views\Fundraisings\Index.cshtml" />
-    <Content Include="Views\RockClass.cshtml" />
-    <Content Include="Views\Home\RockClass.cshtml" />
+    <Content Include="Views\GearLists\Create.cshtml" />
+    <Content Include="Views\GearLists\Delete.cshtml" />
+    <Content Include="Views\GearLists\Details.cshtml" />
+    <Content Include="Views\GearLists\Edit.cshtml" />
+    <Content Include="Views\GearLists\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="js\prettyPhoto_3.1.5\images\prettyPhoto\dark_square\" />
@@ -370,6 +411,9 @@
     <EmbeddedResource Include="Migrations\201503071947574_Init.resx">
       <DependentUpon>201503071947574_Init.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

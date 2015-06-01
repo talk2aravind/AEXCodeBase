@@ -1,18 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEX_Website", "AEX_Website\AEX_Website.csproj", "{E5769EA1-E428-4636-8289-1816E7DDEF17}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureExplorersDB", "AdventureExplorersDB\AdventureExplorersDB.sqlproj", "{DA8C5792-9029-498F-9FD6-7A0C277A5411}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://ae-coderepository.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = AEX_Website\\AEX_Website.csproj
-		SccProjectName1 = AEX_Website
-		SccLocalPath1 = AEX_Website
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -22,6 +17,12 @@ Global
 		{E5769EA1-E428-4636-8289-1816E7DDEF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5769EA1-E428-4636-8289-1816E7DDEF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5769EA1-E428-4636-8289-1816E7DDEF17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8C5792-9029-498F-9FD6-7A0C277A5411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8C5792-9029-498F-9FD6-7A0C277A5411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8C5792-9029-498F-9FD6-7A0C277A5411}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DA8C5792-9029-498F-9FD6-7A0C277A5411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8C5792-9029-498F-9FD6-7A0C277A5411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8C5792-9029-498F-9FD6-7A0C277A5411}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
