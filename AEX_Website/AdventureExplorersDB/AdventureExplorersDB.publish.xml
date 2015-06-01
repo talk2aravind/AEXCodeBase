@@ -4,7 +4,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>adventure-explorers_db</TargetDatabaseName>
     <DeployScriptFileName>AdventureExplorersDB.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=dufty7szcw.database.windows.net;User ID=dbadmin@dufty7szcw;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=dufty7szcw.database.windows.net,1433;User ID=dbadmin@dufty7szcw;Pooling=False</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
 </Project>
