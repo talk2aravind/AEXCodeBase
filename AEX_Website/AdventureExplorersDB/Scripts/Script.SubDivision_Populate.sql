@@ -12,9 +12,9 @@ Post-Deployment Script Template
 ;
 MERGE INTO dbo.SubDivision AS Target 
 USING (
- ( SELECT A.id, b.id
+ ( SELECT T.SubDivision, A.id as DivisionId
 	FROM (
-		SELECT 'BCC 2013' AS SubDivision,'BCC' AS Division UNION ALL
+		SELECT 'BCC 2013' AS SubDivision,'BCC' AS Division UNION ALLC:\Users\Mahima\Source\Repos\AEXCodeBase\AEX_Website\AEX_Website\Models\
 		SELECT 'BCC 2014','BCC'     UNION ALL
 		SELECT 'BCC 2015','BCC'		UNION ALL
 		SELECT 'BRC 2013','BRC'		UNION ALL
@@ -24,18 +24,16 @@ USING (
 		SELECT 'ICC 2014','ICC'		UNION ALL
 		SELECT 'ICC 2015','ICC'
 	) T
-	INNER JOIN dbo.AexMaster  A 
-	ON A.Name = T.Subdivision
-	INNER JOIN dbo.AexMaster B 
-	ON B.Name = T.Division
+	INNER JOIN dbo.Division as A 
+	ON A.Name = T.Division
 	)
 ) 
-AS Source (Id, DivisionId) 
-ON Target.id= Source.Id and Target.DivisionId = Source.DivisionId
+AS Source (SubDivision,DivisionId) 
+ON Target.Name = Source.SubDivision and Target.DivisionId = Source.DivisionId
 -- insert new rows 
 WHEN NOT MATCHED BY TARGET THEN 
-INSERT (Id, DivisionId) 
-VALUES (Id, DivisionId) 
+INSERT (Name, DivisionId) 
+VALUES (SubDivision, DivisionId) 
 -- delete rows that are in the target but not the source 
 WHEN NOT MATCHED BY SOURCE THEN 
 DELETE;

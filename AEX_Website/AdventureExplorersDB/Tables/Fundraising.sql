@@ -7,5 +7,5 @@
     [ProfileDiscription] NVARCHAR(MAX) NULL, 
     [isActive] BIT NOT NULL DEFAULT 1, 
     CONSTRAINT [FK_Fundraising_members] FOREIGN KEY ([MemberId]) REFERENCES [members]([Id]), 
-    CONSTRAINT [FK_Fundraising_AEXMaster] FOREIGN KEY ([SubDivisionId]) REFERENCES [AEXMaster]([Id])
+    CONSTRAINT [FK_Fundraising_AEXMaster] FOREIGN KEY ([SubDivisionId]) REFERENCES [SubDivision]([Id])
 )

@@ -165,10 +165,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DivisionsController.cs" />
     <Compile Include="Controllers\FundraisingsController.cs" />
     <Compile Include="Controllers\GearListsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MembersController.cs" />
+    <Compile Include="Controllers\SubDivisionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -178,7 +181,27 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Fundraising.cs" />
+    <Compile Include="Models\Division.cs">
+      <DependentUpon>Fundraising.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Fundraising.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fundraising.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Fundraising.cs">
+      <DependentUpon>Fundraising.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Fundraising.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fundraising.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Fundraising1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fundraising.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\GearCheckOut.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -199,6 +222,14 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Member.cs">
+      <DependentUpon>Fundraising.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Metadata.cs" />
+    <Compile Include="Models\Partialclasses.cs" />
+    <Compile Include="Models\SubDivision.cs">
+      <DependentUpon>Fundraising.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -330,6 +361,23 @@
       <DependentUpon>GearCheckOut.edmx</DependentUpon>
       <LastGenOutput>GearCheckOut.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\Fundraising.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Fundraising.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Fundraising.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Fundraising.edmx</DependentUpon>
+      <LastGenOutput>Fundraising.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Fundraising.edmx.diagram">
+      <DependentUpon>Fundraising.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Fundraising.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Fundraising.edmx</DependentUpon>
+      <LastGenOutput>Fundraising1.cs</LastGenOutput>
+    </Content>
     <None Include="Properties\PublishProfiles\adventure-explorers.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -383,16 +431,31 @@
     <Content Include="Views\Home\Store.cshtml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Views\Fundraisings\Create.cshtml" />
-    <Content Include="Views\Fundraisings\Delete.cshtml" />
-    <Content Include="Views\Fundraisings\Details.cshtml" />
-    <Content Include="Views\Fundraisings\Edit.cshtml" />
-    <Content Include="Views\Fundraisings\Index.cshtml" />
     <Content Include="Views\GearLists\Create.cshtml" />
     <Content Include="Views\GearLists\Delete.cshtml" />
     <Content Include="Views\GearLists\Details.cshtml" />
     <Content Include="Views\GearLists\Edit.cshtml" />
     <Content Include="Views\GearLists\Index.cshtml" />
+    <Content Include="Views\Fundraisings\Create.cshtml" />
+    <Content Include="Views\Fundraisings\Delete.cshtml" />
+    <Content Include="Views\Fundraisings\Details.cshtml" />
+    <Content Include="Views\Fundraisings\Edit.cshtml" />
+    <Content Include="Views\Fundraisings\Index.cshtml" />
+    <Content Include="Views\SubDivisions\Create.cshtml" />
+    <Content Include="Views\SubDivisions\Delete.cshtml" />
+    <Content Include="Views\SubDivisions\Details.cshtml" />
+    <Content Include="Views\SubDivisions\Edit.cshtml" />
+    <Content Include="Views\SubDivisions\Index.cshtml" />
+    <Content Include="Views\Divisions\Create.cshtml" />
+    <Content Include="Views\Divisions\Delete.cshtml" />
+    <Content Include="Views\Divisions\Details.cshtml" />
+    <Content Include="Views\Divisions\Edit.cshtml" />
+    <Content Include="Views\Divisions\Index.cshtml" />
+    <Content Include="Views\Members\Create.cshtml" />
+    <Content Include="Views\Members\Delete.cshtml" />
+    <Content Include="Views\Members\Details.cshtml" />
+    <Content Include="Views\Members\Edit.cshtml" />
+    <Content Include="Views\Members\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="js\prettyPhoto_3.1.5\images\prettyPhoto\dark_square\" />

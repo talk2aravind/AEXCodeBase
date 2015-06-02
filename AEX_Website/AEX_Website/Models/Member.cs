@@ -12,16 +12,20 @@ namespace AEXApplication.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Fundraising
+    public partial class Member
     {
+        public Member()
+        {
+            this.Fundraisings = new HashSet<Fundraising>();
+        }
+    
         public int Id { get; set; }
-        public int MemberId { get; set; }
-        public int SubDivisionId { get; set; }
-        public Nullable<decimal> AchievedTarget { get; set; }
-        public string ProfileDiscription { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public System.DateTime CreatedDate { get; set; }
+        public Nullable<System.DateTime> ModifiedDate { get; set; }
         public bool isActive { get; set; }
     
-        public virtual SubDivision SubDivision { get; set; }
-        public virtual Member Member { get; set; }
+        public virtual ICollection<Fundraising> Fundraisings { get; set; }
     }
 }

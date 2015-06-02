@@ -10,116 +10,107 @@ using AEXApplication.Models;
 
 namespace AEXApplication.Controllers
 {
-    public class FundraisingsController : Controller
+    public class DivisionsController : Controller
     {
         private FundraisingDBEntities db = new FundraisingDBEntities();
 
-        // GET: Fundraisings
+        // GET: Divisions
         public ActionResult Index()
         {
-            var fundraisings = db.Fundraisings.Include(f => f.SubDivision).Include(f => f.Member);
-            return View(fundraisings.ToList());
+            return View(db.Divisions.ToList());
         }
 
-        // GET: Fundraisings/Details/5
+        // GET: Divisions/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Fundraising fundraising = db.Fundraisings.Find(id);
-            if (fundraising == null)
+            Division division = db.Divisions.Find(id);
+            if (division == null)
             {
                 return HttpNotFound();
             }
-            return View(fundraising);
+            return View(division);
         }
 
-        // GET: Fundraisings/Create
+        // GET: Divisions/Create
         public ActionResult Create()
         {
-            ViewBag.SubDivisionId = new SelectList(db.SubDivisions, "Id", "Name");
-            ViewBag.MemberId = new SelectList(db.Members, "Id", "FirstName");
             return View();
         }
 
-        // POST: Fundraisings/Create
+        // POST: Divisions/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,MemberId,SubDivisionId,AchievedTarget,ProfileDiscription,isActive")] Fundraising fundraising)
+        public ActionResult Create([Bind(Include = "Id,Name,CreatedDate,ModifiedDate,isActive")] Division division)
         {
             if (ModelState.IsValid)
             {
-                db.Fundraisings.Add(fundraising);
+                db.Divisions.Add(division);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.SubDivisionId = new SelectList(db.SubDivisions, "Id", "Name", fundraising.SubDivisionId);
-            ViewBag.MemberId = new SelectList(db.Members, "Id", "FirstName", fundraising.MemberId);
-            return View(fundraising);
+            return View(division);
         }
 
-        // GET: Fundraisings/Edit/5
+        // GET: Divisions/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Fundraising fundraising = db.Fundraisings.Find(id);
-            if (fundraising == null)
+            Division division = db.Divisions.Find(id);
+            if (division == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.SubDivisionId = new SelectList(db.SubDivisions, "Id", "Name", fundraising.SubDivisionId);
-            ViewBag.MemberId = new SelectList(db.Members, "Id", "FirstName", fundraising.MemberId);
-            return View(fundraising);
+            return View(division);
         }
 
-        // POST: Fundraisings/Edit/5
+        // POST: Divisions/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,MemberId,SubDivisionId,AchievedTarget,ProfileDiscription,isActive")] Fundraising fundraising)
+        public ActionResult Edit([Bind(Include = "Id,Name,CreatedDate,ModifiedDate,isActive")] Division division)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(fundraising).State = EntityState.Modified;
+                db.Entry(division).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.SubDivisionId = new SelectList(db.SubDivisions, "Id", "Name", fundraising.SubDivisionId);
-            ViewBag.MemberId = new SelectList(db.Members, "Id", "FirstName", fundraising.MemberId);
-            return View(fundraising);
+            return View(division);
         }
 
-        // GET: Fundraisings/Delete/5
+        // GET: Divisions/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Fundraising fundraising = db.Fundraisings.Find(id);
-            if (fundraising == null)
+            Division division = db.Divisions.Find(id);
+            if (division == null)
             {
                 return HttpNotFound();
             }
-            return View(fundraising);
+            return View(division);
         }
 
-        // POST: Fundraisings/Delete/5
+        // POST: Divisions/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Fundraising fundraising = db.Fundraisings.Find(id);
-            db.Fundraisings.Remove(fundraising);
+            Division division = db.Divisions.Find(id);
+            db.Divisions.Remove(division);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

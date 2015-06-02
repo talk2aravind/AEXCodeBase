@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AEXApplication.Models.Fundraising>
+﻿@model IEnumerable<AEXApplication.Models.Member>
 
 @{
     ViewBag.Title = "Index";
@@ -13,19 +13,19 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.AchievedTarget)
+            @Html.DisplayNameFor(model => model.FirstName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ProfileDiscription)
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.isActive)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SubDivision.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Member.FirstName)
         </th>
         <th></th>
     </tr>
@@ -33,19 +33,19 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.AchievedTarget)
+            @Html.DisplayFor(modelItem => item.FirstName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ProfileDiscription)
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedDate)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.isActive)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SubDivision.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Member.FirstName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
