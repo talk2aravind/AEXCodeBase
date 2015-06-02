@@ -69,12 +69,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PROD_AdventureExplorersDB.publish.xml" />
+    <None Include="JeenMachineAdventureExplorersDB.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="AdventureExplorersDB.refactorlog" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.AexMaster_Populate.sql" />
-    <None Include="Scripts\Script.SubDivision_Populate.sql" />
+    <None Include="Scripts\Script.Members_Populate.sql" />
+    <None Include="Scripts\Script.Subdivision_Populate.sql" />
   </ItemGroup>
 </Project>

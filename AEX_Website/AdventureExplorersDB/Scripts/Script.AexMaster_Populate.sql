@@ -9,33 +9,34 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-;
-MERGE INTO dbo.SubDivision AS Target 
-USING (
- ( SELECT A.id, b.id
-	FROM (
-		SELECT 'BCC 2013' AS SubDivision,'BCC' AS Division UNION ALL
-		SELECT 'BCC 2014','BCC'     UNION ALL
-		SELECT 'BCC 2015','BCC'		UNION ALL
-		SELECT 'BRC 2013','BRC'		UNION ALL
-		SELECT 'BRC 2014','BRC'		UNION ALL
-		SELECT 'BRC 2015','BRC'		UNION ALL
-		SELECT 'ICC 2013','ICC'		UNION ALL
-		SELECT 'ICC 2014','ICC'		UNION ALL
-		SELECT 'ICC 2015','ICC'
-	) T
-	INNER JOIN dbo.AexMaster  A 
-	ON A.Name = T.Subdivision
-	INNER JOIN dbo.AexMaster B 
-	ON B.Name = T.Division
-	)
+
+-- Reference Data for AddressType 
+MERGE INTO dbo.AexMaster AS Target 
+USING (VALUES 
+  (1, N'BCC'), 
+  (2, N'BRC'),
+  (3, N'ICC'),
+  (4, N'Conservation'),
+  (5, N'Fundraising'),
+  (6, N'BCC 2014'),
+  (7, N'BCC 2015'),
+  (8, N'BRC 2014'),
+  (9, N'BRC 2015'),
+  (10, N'ICC 2014'),
+  (11, N'ICC 2015')
 ) 
-AS Source (Id, DivisionId) 
-ON Target.id= Source.Id and Target.DivisionId = Source.DivisionId
+AS Source (Id, Name) 
+ON Target.id= Source.Id
+-- update matched rows 
+WHEN MATCHED THEN 
+UPDATE SET Name = Source.Name 
 -- insert new rows 
 WHEN NOT MATCHED BY TARGET THEN 
-INSERT (Id, DivisionId) 
-VALUES (Id, DivisionId) 
+INSERT ( Name) 
+VALUES (Name) 
 -- delete rows that are in the target but not the source 
 WHEN NOT MATCHED BY SOURCE THEN 
 DELETE;
+
+:r .\Script.Members_Populate.sql
+:r .\Script.Subdivision_Populate.sql

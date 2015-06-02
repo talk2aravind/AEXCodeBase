@@ -4,5 +4,6 @@
     [FirstName] NVARCHAR(30) NULL, 
     [LastName] NVARCHAR(30) NULL, 
     [CreatedDate] DATETIME NOT NULL DEFAULT getutcdate(), 
-    [ModifiedDate] DATETIME NULL
+    [ModifiedDate] DATETIME NULL, 
+    [isActive] BIT NOT NULL DEFAULT 1
 )

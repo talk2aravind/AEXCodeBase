@@ -37,9 +37,10 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav pull-right navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Programs<span class="caret"></span></a>
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="active">@Html.ActionLink("Group Gear", "Index", "GearLists")</li>
+                        @*<li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Programs<span class="caret"></span></a>*@
                             @*<ul class="dropdown-menu">
                                 <li>@Html.ActionLink("Rock Class", "RockClass", "Home")
                                 </li>

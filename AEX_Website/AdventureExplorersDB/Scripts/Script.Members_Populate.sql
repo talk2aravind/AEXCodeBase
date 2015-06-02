@@ -9,33 +9,23 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-;
-MERGE INTO dbo.SubDivision AS Target 
-USING (
- ( SELECT A.id, b.id
-	FROM (
-		SELECT 'BCC 2013' AS SubDivision,'BCC' AS Division UNION ALL
-		SELECT 'BCC 2014','BCC'     UNION ALL
-		SELECT 'BCC 2015','BCC'		UNION ALL
-		SELECT 'BRC 2013','BRC'		UNION ALL
-		SELECT 'BRC 2014','BRC'		UNION ALL
-		SELECT 'BRC 2015','BRC'		UNION ALL
-		SELECT 'ICC 2013','ICC'		UNION ALL
-		SELECT 'ICC 2014','ICC'		UNION ALL
-		SELECT 'ICC 2015','ICC'
-	) T
-	INNER JOIN dbo.AexMaster  A 
-	ON A.Name = T.Subdivision
-	INNER JOIN dbo.AexMaster B 
-	ON B.Name = T.Division
-	)
+
+-- Reference Data for Members
+MERGE INTO dbo.Members AS Target 
+USING (VALUES 
+  (1, N'Jeen'	,N'Zachariah'), 
+  (2, N'Mahima'	,N'John')
 ) 
-AS Source (Id, DivisionId) 
-ON Target.id= Source.Id and Target.DivisionId = Source.DivisionId
+AS Source (Id, FirstName, LastName) 
+ON Target.id= Source.Id
+-- update matched rows 
+WHEN MATCHED THEN 
+UPDATE SET FirstName = Source.FirstName
+       ,LastName = Source.LastName
 -- insert new rows 
 WHEN NOT MATCHED BY TARGET THEN 
-INSERT (Id, DivisionId) 
-VALUES (Id, DivisionId) 
+INSERT ( FirstName, LastName) 
+VALUES (FirstName, LastName) 
 -- delete rows that are in the target but not the source 
 WHEN NOT MATCHED BY SOURCE THEN 
 DELETE;
