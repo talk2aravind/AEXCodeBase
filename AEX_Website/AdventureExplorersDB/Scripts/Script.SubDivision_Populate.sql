@@ -14,7 +14,7 @@ MERGE INTO dbo.SubDivision AS Target
 USING (
  ( SELECT T.SubDivision, A.id as DivisionId
 	FROM (
-		SELECT 'BCC 2013' AS SubDivision,'BCC' AS Division UNION ALLC:\Users\Mahima\Source\Repos\AEXCodeBase\AEX_Website\AEX_Website\Models\
+		SELECT 'BCC 2013' AS SubDivision,'BCC' AS Division UNION
 		SELECT 'BCC 2014','BCC'     UNION ALL
 		SELECT 'BCC 2015','BCC'		UNION ALL
 		SELECT 'BRC 2013','BRC'		UNION ALL
