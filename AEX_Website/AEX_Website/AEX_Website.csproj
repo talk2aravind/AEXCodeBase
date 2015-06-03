@@ -197,11 +197,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Fundraising.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Fundraising1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Fundraising.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\GearCheckOut.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
