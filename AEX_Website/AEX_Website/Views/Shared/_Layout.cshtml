@@ -24,7 +24,7 @@
         <div class="container">
             <div class="navbar navbar-default" role="navigation">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href=@Url.Action("Index","Home")>
                         <img src="~/images/small_logo.jpg" alt="sick of it." height="90" width="90">
                         <span class="logo_title"><strong>Adventure Explorers</strong></span> <span class="logo_subtitle">a multipurpose template</span>
                     </a>
@@ -38,15 +38,36 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav pull-right navbar-nav">
                         <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li class="active">@Html.ActionLink("Group Gear", "Index", "GearLists")</li>
-                        @*<li class="dropdown">
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Programs<span class="caret"></span></a>*@
-                            @*<ul class="dropdown-menu">
-                                <li>@Html.ActionLink("Rock Class", "RockClass", "Home")
+@*                        <li class="active">@Html.ActionLink("BRC", "BRC", "Home")</li>*@
+                        <li class="active">@Html.ActionLink("Contact Us", "Contactus", "Home")</li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">BCC<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Application Form", "BCCApplication", "Home")
+                                <li>@Html.ActionLink("Calendar", "BCCCalendar", "Home")
+                                <li>@Html.ActionLink("Instructor Sign up", "BCCInstructorForm", "Home")
+                                    
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">BRC<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Calendar", "BRCCalendar", "Home")
+                                <li>@Html.ActionLink("Application Form", "BRCApplication", "Home")
+                                <li>@Html.ActionLink("Level 1", "BRCLevel1", "Home")
+                                <li>@Html.ActionLink("Level 2", "BRCLevel2", "Home")
+                                <li>@Html.ActionLink("Level 3", "BRCLevel3", "Home")
+                                <li>@Html.ActionLink("Level 4", "BRCLevel4", "Home")
+                                <li>@Html.ActionLink("Level 5", "BRCLevel5", "Home")
+                                <li>@Html.ActionLink("Level 6", "BRCLevel6", "Home")
+                                <li>@Html.ActionLink("Level 7", "BRCLevel7", "Home")
                                 </li>
-                            </ul>*@
+                            </ul>
                             
                         </li>
+                        <li class="active">@Html.ActionLink("Group Gear", "Index", "GearLists")</li>
+
                         @*<li><a href="about_us.html">About Us</a></li>
                         <li class="dropdown">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">Conserve<span class="caret"></span></a>

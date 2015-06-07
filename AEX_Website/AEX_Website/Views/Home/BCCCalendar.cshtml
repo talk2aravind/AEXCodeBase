@@ -1,0 +1,1558 @@
+﻿
+@{
+    ViewBag.Title = "BRCCalendar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>BCC Calendar 2015</h2>
+    <html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+
+<style id="Basic Climbing Class 2015 Calendar_22527_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl1522527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6322527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#C3D69B;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6422527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#B8CCE4;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6522527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#C6D9F0;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6622527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#C6D9F0;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6722527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#FBD5B5;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6822527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#FBD5B5;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6922527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#C3D69B;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl7022527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#F8CBAD;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7122527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#A9D08E;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7222527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7322527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#B8CCE4;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7422527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#C6D9F0;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7522527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#C3D69B;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7622527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#FBD5B5;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7722527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#A9D08E;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7822527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#F8CBAD;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7922527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#C3D69B;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl8022527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8122527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8222527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8322527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8422527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:1.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8522527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#B8CCE4;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8622527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#B8CCE4;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8722527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#C6D9F0;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8822527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C6D9F0;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8922527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#C3D69B;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9022527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C3D69B;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9122527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#FBD5B5;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9222527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FBD5B5;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9322527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#A9D08E;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9422527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#A9D08E;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9522527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#F8CBAD;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9622527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#F8CBAD;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9722527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#F8CBAD;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9822527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#F8CBAD;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9922527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#F8CBAD;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl10022527
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#F8CBAD;
+	mso-pattern:black none;
+	white-space:nowrap;}
+-->
+</style>
+</head>
+
+<body>
+<!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+<!--The following information was generated by Microsoft Excel's Publish as Web
+Page wizard.-->
+<!--If the same item is republished from Excel, all information between the DIV
+tags will be replaced.-->
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+    <div class="container">
+<div id="Basic Climbing Class 2015 Calendar_22527" align=center
+x:publishsource="Excel">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1169 style='border-collapse:
+ collapse;table-layout:fixed;width:952pt'>
+ <col class=xl7222527 width=64 style='width:48pt'>
+ <col width=64 span=3 style='width:48pt'>
+ <col width=247 style='mso-width-source:userset;mso-width-alt:8789;width:185pt'>
+ <col width=138 style='mso-width-source:userset;mso-width-alt:4920;width:104pt'>
+ <col width=199 style='mso-width-source:userset;mso-width-alt:7082;width:149pt'>
+ <col width=167 style='mso-width-source:userset;mso-width-alt:5944;width:125pt'>
+ <col class=xl8022527 width=57 style='mso-width-source:userset;mso-width-alt:
+ 2019;width:43pt'>
+ <col width=59 style='mso-width-source:userset;mso-width-alt:2104;width:44pt'>
+ <col width=146 style='mso-width-source:userset;mso-width-alt:5205;width:110pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl8122527 width=64 style='height:15.0pt;width:48pt'>No</td>
+  <td class=xl8222527 width=64 style='border-left:none;width:48pt'>Date</td>
+  <td class=xl8222527 width=64 style='border-left:none;width:48pt'>Type</td>
+  <td class=xl8222527 width=64 style='border-left:none;width:48pt'>Day</td>
+  <td class=xl8222527 width=247 style='border-left:none;width:185pt'>Learning</td>
+  <td class=xl8222527 width=138 style='border-left:none;width:104pt'>Category</td>
+  <td class=xl8222527 width=199 style='border-left:none;width:149pt'>Place</td>
+  <td class=xl8222527 width=167 style='border-left:none;width:125pt'>Reading
+  Assignment</td>
+  <td class=xl8322527 width=57 style='border-left:none;width:43pt'>Chapter</td>
+  <td class=xl8222527 width=59 style='border-left:none;width:44pt'>Pages</td>
+  <td class=xl8422527 width=146 style='border-left:none;width:110pt'>Comments</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8522527 style='height:14.4pt;border-top:none'>1</td>
+  <td class=xl6422527 style='border-top:none;border-left:none'>Jan 3rd</td>
+  <td class=xl6422527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6422527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6422527 style='border-top:none;border-left:none'>Hiking Basics</td>
+  <td class=xl6422527 style='border-top:none;border-left:none'>Hike</td>
+  <td class=xl6422527 style='border-top:none;border-left:none'>Mt Si</td>
+  <td class=xl6422527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7322527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6422527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl8622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8722527 style='height:14.4pt;border-top:none'>2</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Jan 7th</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Night Hiking</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Night Hike</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>RattleSnake
+  Ledge</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7422527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl8822527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=45 style='mso-height-source:userset;height:33.75pt'>
+  <td height=45 class=xl8722527 style='height:33.75pt;border-top:none'>3</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Jan 10th</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Hiking Endurance</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Hike</td>
+  <td class=xl6622527 width=199 style='border-top:none;border-left:none;
+  width:149pt'>Boulder Garden - Old Si -<br>
+    Talus Loop - New Si</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7422527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl8822527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8722527 style='height:14.4pt;border-top:none'>4</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Jan 14th</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Night Hiking</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Hike</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Poo Poo Point</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7422527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl8822527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8722527 style='height:14.4pt;border-top:none'>5</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Jan 17th</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Hiking 4000+</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Scramble</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Mount Washington</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7422527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl8822527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>6</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Jan 21st</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Navigation -
+  Maps &amp; Compass</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online -
+  Navigation</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Navigation</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>5</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>86-114</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl9122527 style='height:27.0pt;border-top:none'>7</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Jan 24th</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Knots &amp;
+  Navigation</td>
+  <td class=xl6822527 width=138 style='border-top:none;border-left:none;
+  width:104pt'>Knots&nbsp;<br>
+    Navigation</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Exit 38</td>
+  <td class=xl6822527 width=167 style='border-top:none;border-left:none;
+  width:125pt'>Knots</td>
+  <td class=xl7622527 style='border-top:none;border-left:none'>9</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>135-191</td>
+  <td class=xl9222527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=38 style='mso-height-source:userset;height:29.25pt'>
+  <td height=38 class=xl8922527 style='height:29.25pt;border-top:none'>8</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Jan 28th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Clothing &amp;
+  Gear</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online - Gears</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6922527 width=167 style='border-top:none;border-left:none;
+  width:125pt'>Clothing and Equipment</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>2</td>
+  <td class=xl6922527 width=59 style='border-top:none;border-left:none;
+  width:44pt'>21-44</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8722527 style='height:14.4pt;border-top:none'>9</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Jan 31st</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Hiking</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Scramble</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Mt Teneriffe</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7422527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl8822527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=38 style='mso-height-source:userset;height:28.5pt'>
+  <td height=38 class=xl8922527 style='height:28.5pt;border-top:none'>10</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Feb 4th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Belaying,Rappelling,Rock
+  Skills</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online - Rock</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6922527 width=167 style='border-top:none;border-left:none;
+  width:125pt'>Climbing Fundamentals<br>
+    Rappelling</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>9</td>
+  <td class=xl6922527 width=59 style='border-top:none;border-left:none;
+  width:44pt'>135-191<br>
+    191-212</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9122527 style='height:14.4pt;border-top:none'>11</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Feb 7th</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Belaying,Rappelling,Rock
+  Skills</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Rock</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Marymoor Park</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7622527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9222527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9322527 style='height:14.4pt;border-top:none'>12</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Feb 11th</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Rock Climbing
+  Techniques</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Indoor - Gym</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Stonegardens</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Climbing
+  Fundamentals</td>
+  <td class=xl7722527 style='border-top:none;border-left:none'>9</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>135-191</td>
+  <td class=xl9422527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8722527 style='height:14.4pt;border-top:none'>13</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Feb 14th</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Hiking 3000+</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Scramble</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>Mail Box Peak</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7422527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6522527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl8822527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>14</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Feb 18th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Snow Travel
+  Techniques</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online - Snow</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Snow Travel
+  Techniques</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>16</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>323-378</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9122527 style='height:14.4pt;border-top:none'>15</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Feb 21st</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Kick Steps,
+  Glissade, Ice Axe, Snow Skills</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Snow</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Stevens Pass</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7622527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9222527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9322527 style='height:14.4pt;border-top:none'>16</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Feb 25th</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Rock Climbing
+  Techniques</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Indoor - Gym</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Stonegardens</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Climbing
+  Fundamentals</td>
+  <td class=xl7722527 style='border-top:none;border-left:none'>9</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>135-191</td>
+  <td class=xl9422527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9122527 style='height:14.4pt;border-top:none'>17</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Feb 28th</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Belaying,Rappelling,Rock
+  Skills</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Rock</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>Erie</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7622527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl6722527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9222527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>18</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Mar 4th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Snow Camping</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online - Camping</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Snow Camping</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>3</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>44-76</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>19</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Mar 7th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Alpine Snow
+  Camping</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Snow Camping</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>St. Helens Climb</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>20</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Mar 11th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Snow Anchors</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online - Snow
+  Anchors</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Snow Anchors</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>16</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>345-378</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>21</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Mar 14th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Avalanche, Snow
+  Anchors</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Snow</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Alphental</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>22</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Mar 18th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Advanced Rock
+  Skills</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online-
+  Rock<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Natural
+  Anchors<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>13</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>242-258</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>23</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Mar 21st</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Advanced Rock
+  Skills</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Rock</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Vantage</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>24</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Mar 25th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weather</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online -<span
+  style='mso-spacerun:yes'>  </span>Weather</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Mountain Weather</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>27</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>555-566</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>25</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Mar 28th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Alpine Snow
+  Camping</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Snow Camping</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Peak in Northern
+  Cascades</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>26</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Apr 1st</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Trip Planning</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online -
+  Planning</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Trip Planning</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>21</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>388-404</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>27</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Apr 4th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Snow Technical
+  Climbing</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Snow<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Kendall or Guye
+  or Silver</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>28</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Apr 8th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Accidents<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online -
+  Accidents</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Accidents in
+  North America</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>22</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>29</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Apr 11th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>High Altitude
+  &amp; Weather</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>High Altitude</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Adams</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl8922527 style='height:28.8pt;border-top:none'>30</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Apr 15th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6922527 width=247 style='border-top:none;border-left:none;
+  width:185pt'>Mountain Environment, <br>
+    Mountaineering Geology</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6922527 width=167 style='border-top:none;border-left:none;
+  width:125pt'>Mountain Environment<br>
+    Mountain Geology</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>23 &amp; 24</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>533-566</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>31</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Apr 18th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Buffer</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Buffer</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Buffer</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl8922527 style='height:28.8pt;border-top:none'>32</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Apr 22nd</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Trail
+  Maintainance</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online - Trial</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6922527 width=167 style='border-top:none;border-left:none;
+  width:125pt'>Leave No Trace<br>
+    Stewardship</td>
+  <td class=xl7922527 width=57 style='border-top:none;border-left:none;
+  width:43pt'>7<br>
+    8</td>
+  <td class=xl6922527 width=59 style='border-top:none;border-left:none;
+  width:44pt'>124-132<br>
+    132-135</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>33</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Apr 25th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Trail
+  Maintainance</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Trail
+  Maintainance</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>WTA</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl8922527 style='height:14.4pt;border-top:none'>34</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Apr 29th</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Crevasse Rescue</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online - CR</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl6922527 width=167 style='border-top:none;border-left:none;
+  width:125pt'>Glacier Travel and CR</td>
+  <td class=xl7522527 style='border-top:none;border-left:none'>17</td>
+  <td class=xl6322527 style='border-top:none;border-left:none'>378-408</td>
+  <td class=xl9022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>35</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>May 2nd</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Alpine Rock
+  Climbing</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Rock</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Tatoosh</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9322527 style='height:14.4pt;border-top:none'>36</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>May 6th</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Crevasse Rescue</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>CR-I</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Marymoor Park</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Glacier Travel
+  and CR</td>
+  <td class=xl7722527 style='border-top:none;border-left:none'>17</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>378-408</td>
+  <td class=xl9422527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>37</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>May 9th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Crevasse Rescue
+  I</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>CR</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Snoqualmie Pass</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9322527 style='height:14.4pt;border-top:none'>38</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>May 13th</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Crevasse Rescue</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>CR-II</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Marymoor Park</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Glacier Travel
+  and CR</td>
+  <td class=xl7722527 style='border-top:none;border-left:none'>17</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>378-408</td>
+  <td class=xl9422527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>39</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>May 16th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Crevasse Rescue
+  II</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>CR</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Mount Rainier</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9322527 style='height:14.4pt;border-top:none'>40</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>May 20th</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Leadership</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Online -
+  Leadership</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Leadership</td>
+  <td class=xl7722527 style='border-top:none;border-left:none'>21</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>477-488</td>
+  <td class=xl9422527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>41</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>May 23rd</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Wilderness First
+  Aid</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>WRFA</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Marymoor Park</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9322527 style='height:14.4pt;border-top:none'>42</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>May 27th</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Indoor</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Weekday</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Expedition
+  Planning</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Online -
+  Expedition</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Online</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>Expedition
+  Planning</td>
+  <td class=xl7722527 style='border-top:none;border-left:none'>20</td>
+  <td class=xl7122527 style='border-top:none;border-left:none'>459-475</td>
+  <td class=xl9422527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>43</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>May 30th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Grad Climb I</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Climb</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Baker</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>45</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Jun 6th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Grad Climb II</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Climb</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Shuksan</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl9522527 style='height:14.4pt;border-top:none'>46</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Jun&nbsp;13th</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Grad Tests</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Test</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>Marymoor Park</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl7022527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9622527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl9722527 style='height:15.0pt;border-top:none'>46</td>
+  <td class=xl9822527 style='border-top:none;border-left:none'>Jun&nbsp;14th</td>
+  <td class=xl9822527 style='border-top:none;border-left:none'>Outdoor</td>
+  <td class=xl9822527 style='border-top:none;border-left:none'>Weekend</td>
+  <td class=xl9822527 style='border-top:none;border-left:none'>Grad
+  Celebrations</td>
+  <td class=xl9822527 style='border-top:none;border-left:none'>End of Class</td>
+  <td class=xl9822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9922527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl9822527 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl10022527 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=247 style='width:185pt'></td>
+  <td width=138 style='width:104pt'></td>
+  <td width=199 style='width:149pt'></td>
+  <td width=167 style='width:125pt'></td>
+  <td width=57 style='width:43pt'></td>
+  <td width=59 style='width:44pt'></td>
+  <td width=146 style='width:110pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+</body>
+
+</html>
+
+</div>
+</div>

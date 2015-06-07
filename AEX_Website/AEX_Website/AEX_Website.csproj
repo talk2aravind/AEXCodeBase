@@ -265,6 +265,13 @@
     <Content Include="images\backgrounds\wild_oliva_light_head.png" />
     <Content Include="images\BCC1.jpg" />
     <Content Include="images\bcc2.jpg" />
+    <Content Include="images\BRC\Level_1.jpg" />
+    <Content Include="images\BRC\Level_2.jpg" />
+    <Content Include="images\BRC\Level_3.jpg" />
+    <Content Include="images\BRC\Level_4.jpg" />
+    <Content Include="images\BRC\Level_5.jpg" />
+    <Content Include="images\BRC\Level_6.jpg" />
+    <Content Include="images\BRC\Level_7.jpg" />
     <Content Include="images\BRC_photo.jpg" />
     <Content Include="images\donate.jpg" />
     <Content Include="images\ICC1.jpg" />
@@ -275,6 +282,9 @@
     <Content Include="images\IMG_9117.JPG" />
     <Content Include="images\IMG_9118.JPG" />
     <Content Include="images\IMG_9121.JPG" />
+    <Content Include="images\Meetup\highres_15065013.jpeg" />
+    <Content Include="images\Meetup\highres_437084431.jpeg" />
+    <Content Include="images\Meetup\highres_438153202.jpeg" />
     <Content Include="images\MtBaker.jpg" />
     <Content Include="images\restart_logo.png" />
     <Content Include="images\small_logo.jpg" />
@@ -456,6 +466,21 @@
     <Content Include="Views\Members\Details.cshtml" />
     <Content Include="Views\Members\Edit.cshtml" />
     <Content Include="Views\Members\Index.cshtml" />
+    <Content Include="Views\Home\BRC.cshtml" />
+    <Content Include="Views\Home\BRCCalendar.cshtml" />
+    <Content Include="Views\Home\BRCApplication.cshtml" />
+    <Content Include="Views\Home\BRCLevel1.cshtml" />
+    <Content Include="Views\Home\BRCLevel2.cshtml" />
+    <Content Include="Views\Home\BRCLevel5.cshtml" />
+    <Content Include="Views\Home\BRCLevel4.cshtml" />
+    <Content Include="Views\Home\BRCLevel3.cshtml" />
+    <Content Include="Views\Home\BRCLevel6.cshtml" />
+    <Content Include="Views\Home\BRCLevel7.cshtml" />
+    <Content Include="Views\Home\BCC.cshtml" />
+    <Content Include="Views\Home\BCCCalendar.cshtml" />
+    <Content Include="Views\Home\BCCApplication.cshtml" />
+    <Content Include="Views\Home\BCCInstructorForm.cshtml" />
+    <Content Include="Views\Home\Contactus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="js\prettyPhoto_3.1.5\images\prettyPhoto\dark_square\" />

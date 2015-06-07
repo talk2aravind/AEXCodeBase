@@ -40,6 +40,99 @@ namespace AEXApplication.Controllers
 
             return View();
         }
+        public ActionResult BRC()
+        {
+            ViewBag.Message = "Your Fundraising page.";
 
+            return View();
+        }
+        public ActionResult BRCCalendar()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BRCApplication()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BRCLevel1()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BRCLevel2()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BRCLevel3()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BRCLevel4()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+
+        public ActionResult BRCLevel5()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BRCLevel6()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BRCLevel7()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+
+        public ActionResult BCC()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BCCCalendar()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BCCApplication()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+
+        public ActionResult Contactus()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+        public ActionResult BCCInstructorForm()
+        {
+            ViewBag.Message = "Your Fundraising page.";
+
+            return View();
+        }
+       
     }
 }
