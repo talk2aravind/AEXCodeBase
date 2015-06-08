@@ -268,7 +268,8 @@
     <Content Include="images\BRC\Level_6.jpg" />
     <Content Include="images\BRC\Level_7.jpg" />
     <Content Include="images\BRC_photo.jpg" />
-    <Content Include="images\donate.jpg" />
+    <Content Include="images\carousel\donate.jpg" />
+    <Content Include="images\carousel\explore.jpg" />
     <Content Include="images\ICC1.jpg" />
     <Content Include="images\IMG_9113.JPG" />
     <Content Include="images\IMG_9114.JPG" />
@@ -277,13 +278,14 @@
     <Content Include="images\IMG_9117.JPG" />
     <Content Include="images\IMG_9118.JPG" />
     <Content Include="images\IMG_9121.JPG" />
+    <Content Include="images\Meetup\group_small.JPG" />
     <Content Include="images\Meetup\highres_15065013.jpeg" />
     <Content Include="images\Meetup\highres_437084431.jpeg" />
     <Content Include="images\Meetup\highres_438153202.jpeg" />
     <Content Include="images\MtBaker.jpg" />
     <Content Include="images\restart_logo.png" />
     <Content Include="images\small_logo.jpg" />
-    <Content Include="images\St.Helens.JPG" />
+    <Content Include="images\StHelens.jpg" />
     <Content Include="images\Team.jpg" />
     <Content Include="images\TM.jpg" />
     <Content Include="js\bootstrap.js" />
